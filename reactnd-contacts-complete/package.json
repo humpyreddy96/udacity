@@ -17,6 +17,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy":"eb deploy"
+    "deploy":"aws s3 cp --recursive --acl public-read ./build s3://humpyudacity/"
   }
 }
